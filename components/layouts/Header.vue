@@ -27,7 +27,7 @@ const showMenu = ref(false)
                 class="w-full h-full rounded-full"
               >
             </span>
-            <span class="mx-2">Sink</span>
+            <span class="mx-2">ddz.to</span>
           </a>
         </div>
 
