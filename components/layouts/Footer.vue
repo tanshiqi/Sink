@@ -1,10 +1,5 @@
 <script setup>
 import { BloggerIcon, GitHubIcon, GmailIcon, MastodonIcon, TelegramIcon, XIcon } from 'vue3-simple-icons'
-
-const email = ref(null)
-onMounted(() => {
-  email.value.href = email.value.href.replace('$', '@')
-})
 </script>
 
 <template>
@@ -23,9 +18,6 @@ onMounted(() => {
       >
         &copy; {{ new Date().getFullYear() }} Based on the open-source project from Sink
       </a>
-      <span
-        class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"
-      />
     </div>
   </section>
 </template>
