@@ -1,5 +1,7 @@
 <script setup>
 import { BloggerIcon, GitHubIcon, GmailIcon, MastodonIcon, TelegramIcon, XIcon } from 'vue3-simple-icons'
+
+const { title, github } = useAppConfig()
 </script>
 
 <template>
@@ -8,11 +10,11 @@ import { BloggerIcon, GitHubIcon, GmailIcon, MastodonIcon, TelegramIcon, XIcon }
       <a
         href="/"
         class="text-xl font-black leading-none text-gray-900 select-none dark:text-gray-100 logo"
-        title="ddz.to"
-      >ddz.to</a>
+        :title="title"
+      >{{ title }}</a>
       <a
         class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
-        href="https://github.com/ccbikai/Sink"
+        :href="github"
         target="_blank"
         title="Sink"
       >
